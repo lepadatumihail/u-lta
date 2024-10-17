@@ -2,7 +2,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #444444;
 }
 
@@ -22,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 #main {
@@ -97,7 +97,7 @@ h6 {
   line-height: 1;
   font-weight: 700;
   letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
 }
 
@@ -149,7 +149,7 @@ h6 {
   justify-content: space-between;
   padding: 8px 16px;
   margin-left: 10px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #fff;
@@ -346,7 +346,7 @@ img {
   width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(0, 20, 63, 0.5), rgba(1, 121, 177, 0.3)),
-    url("../img/backk.jpeg") top center;
+    url('../img/backk.jpeg') top center;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
@@ -464,7 +464,7 @@ section {
 }
 
 .section-title h2::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   top: 50%;
@@ -510,7 +510,7 @@ section {
   display: inline-block;
   padding-right: 10px;
   color: #6c757d;
-  content: "/";
+  content: '/';
 }
 
 @media (max-width: 768px) {
@@ -529,14 +529,14 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/about-bg.jpg") center center no-repeat;
+  background: url('../img/about-bg.jpg') center center no-repeat;
   background-size: cover;
   padding: 60px 0;
   position: relative;
 }
 
 .about::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;
@@ -635,7 +635,7 @@ section {
 }
 
 .services .icon-box::before {
-  content: "";
+  content: '';
   position: absolute;
   background: white;
   right: 0;
@@ -720,7 +720,7 @@ section {
 .counts .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   color: #49788c;
 }
@@ -731,7 +731,7 @@ section {
   margin-top: 20px;
   color: #49788c;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -744,7 +744,7 @@ section {
 --------------------------------------------------------------*/
 .cta {
   background: linear-gradient(rgba(5, 130, 184, 0.8), rgba(103, 176, 209, 0.8)),
-    url("../img/cta-bg.jpg") fixed center center;
+    url('../img/cta-bg.jpg') fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -760,7 +760,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -825,7 +825,7 @@ section {
 }
 
 .portfolio .portfolio-wrap::before {
-  content: "";
+  content: '';
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
   left: 0;
@@ -959,10 +959,17 @@ section {
   min-height: 320px;
 }
 
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  margin: 0 auto;
+.testimonials .testimonial-item img {
+  max-width: 120px;
+  object-fit: contain !important;
+  /* height: 90px; */
+}
+
+.testimonials .testimonial-item a {
+  /* max-height: 120px; */
+  height: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .testimonials .testimonial-item h3 {
@@ -1009,7 +1016,7 @@ section {
 }
 
 .testimonials .testimonial-item p::after {
-  content: "";
+  content: '';
   width: 0;
   height: 0;
   border-top: 20px solid #fff;
@@ -1078,7 +1085,7 @@ section {
 }
 
 .team .member h4::after {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   width: 50px;
@@ -1191,7 +1198,7 @@ section {
 }
 
 .contact .php-email-form .loading:before {
-  content: "";
+  content: '';
   display: inline-block;
   border-radius: 50%;
   width: 24px;
@@ -1223,7 +1230,7 @@ section {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type="submit"] {
+.contact .php-email-form button[type='submit'] {
   background: #67b0d1;
   border: 0;
   padding: 10px 24px;
@@ -1231,7 +1238,7 @@ section {
   transition: 0.4s;
 }
 
-.contact .php-email-form button[type="submit"]:hover {
+.contact .php-email-form button[type='submit']:hover {
   background: #8ec4dd;
 }
 
@@ -1289,7 +1296,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 #footer .footer-top .social-links a {
@@ -1367,13 +1374,13 @@ section {
   border-radius: 4;
 }
 
-#footer .footer-top .footer-newsletter form input[type="email"] {
+#footer .footer-top .footer-newsletter form input[type='email'] {
   border: 0;
   padding: 4px;
   width: calc(100% - 110px);
 }
 
-#footer .footer-top .footer-newsletter form input[type="submit"] {
+#footer .footer-top .footer-newsletter form input[type='submit'] {
   position: absolute;
   top: 0;
   right: 0;
@@ -1388,7 +1395,7 @@ section {
   border-radius: 4;
 }
 
-#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
+#footer .footer-top .footer-newsletter form input[type='submit']:hover {
   background: #409cc5;
 }
 
