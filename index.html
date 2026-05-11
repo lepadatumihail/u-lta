@@ -348,8 +348,12 @@
 
             <br /><br />
             <div class="row">
-              <div class="col-4">
-                <div class="list-group" id="list-tab" role="tablist">
+              <div class="col-md-4">
+                <div
+                  class="list-group d-none d-md-block"
+                  id="list-tab"
+                  role="tablist"
+                >
                   <a
                     style="height: 3em"
                     class="list-group-item list-group-item-action active"
@@ -401,8 +405,59 @@
                     >Passenger Transport</a
                   >
                 </div>
+                <div
+                  class="list-group list-group-horizontal d-md-none mb-3"
+                  id="list-tab-sm"
+                  role="tablist"
+                >
+                  <a
+                    class="list-group-item list-group-item-action active"
+                    id="list-home-list-sm"
+                    data-toggle="list"
+                    href="#list-home"
+                    role="tab"
+                    aria-controls="home"
+                    >Cargo
+                  </a>
+                  <a
+                    class="list-group-item list-group-item-action"
+                    id="list-profile-list-sm"
+                    data-toggle="list"
+                    href="#list-profile"
+                    role="tab"
+                    aria-controls="profile"
+                    >Telecom
+                  </a>
+                  <a
+                    class="list-group-item list-group-item-action"
+                    id="list-messages-list-sm"
+                    data-toggle="list"
+                    href="#list-messages"
+                    role="tab"
+                    aria-controls="messages"
+                    >Surveillance
+                  </a>
+                  <a
+                    class="list-group-item list-group-item-action"
+                    id="list-settings-list-sm"
+                    data-toggle="list"
+                    href="#list-settings"
+                    role="tab"
+                    aria-controls="settings"
+                    >Rescue
+                  </a>
+                  <a
+                    class="list-group-item list-group-item-action"
+                    id="list-cost-list-sm"
+                    data-toggle="list"
+                    href="#list-cost"
+                    role="tab"
+                    aria-controls="cost"
+                    >Transport</a
+                  >
+                </div>
               </div>
-              <div class="col-8">
+              <div class="col-md-8">
                 <div
                   class="tab-content"
                   id="nav-tabContent"
@@ -491,29 +546,65 @@
         </div>
       </section>
 
-      <section id="image-grid" class="image-grid">
+      <section id="image-grid" class="image-grid" style="padding-top: 0px">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-              <img
-                src="./assets/img/homepage/flying1.png"
-                class="w-100 shadow-1-strong rounded mb-4"
-                alt="Germany Meetup 1"
-              />
-            </div>
-            <div class="col-lg-6 mb-4 mb-lg-0">
-              <img
-                src="./assets/img/homepage/flying3.png"
-                class="w-100 shadow-1-strong rounded mb-4"
-                alt="Germany Meetup 2"
-              />
+            <div class="row">
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div
+                  style="height: 500px; display: flex; flex-direction: column"
+                >
+                  <img
+                    src="./assets/img/homepage/flying1.png"
+                    class="w-100 h-75 shadow-1-strong rounded mb-4"
+                    alt="Digital rendering of LCA60T"
+                    style="object-fit: cover"
+                  />
+                  <p
+                    class="text-center mt-2"
+                    style="font-size: 0.9rem; color: gray"
+                  >
+                    Digital rendering of the LCA60T design project. (source:
+                    <a href="https://www.flying-whales.com" target="_blank"
+                      >www.flying-whales.com</a
+                    >)
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div
+                  style="height: 500px; display: flex; flex-direction: column"
+                >
+                  <img
+                    src="./assets/img/homepage/flying3.png"
+                    class="w-100 h-75 shadow-1-strong rounded mb-4"
+                    alt="Kelluu's airship"
+                    style="object-fit: cover"
+                  />
+                  <p
+                    class="text-center mt-2"
+                    style="font-size: 0.9rem; color: gray"
+                  >
+                    HyLighter flying above energy line infrastructure. (source:
+                    <a href="https://www.hylight.aero" target="_blank"
+                      >www.hylight.aero</a
+                    >)
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="col-lg-12 mb-4 mb-lg-0">
               <img
                 src="./assets/img/homepage/flying2.png"
                 class="w-100 shadow-1-strong rounded mb-4"
-                alt="Germany Meetup 3"
+                alt="HyLighter flying"
               />
+              <p class="text-center" style="font-size: 0.9rem; color: gray">
+                Kelluu's airship while performing forestry monitoring. (source:
+                <a href="https://www.kelluu.com" target="_blank"
+                  >www.kelluu.com</a
+                >)
+              </p>
             </div>
           </div>
         </div>
@@ -1061,19 +1152,6 @@
 
               <div class="swiper-slide">
                 <div class="testimonial-item">
-                  <a href="https://www.sceye.com" target="_blank">
-                    <img
-                      style="max-width: 200px"
-                      src="assets/img/partners/skye-logo.png"
-                      alt=""
-                    />
-                  </a>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
                   <a
                     href="https://www.linkedin.cn/company/flywin?trk=similar-pages_result-card_full-click"
                     target="_blank"
@@ -1121,19 +1199,6 @@
                       style="max-width: 200px"
                       src="assets/img/partners/daer.png"
                       alt="aerovehic"
-                    />
-                  </a>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <a href="https://umanitoba.ca" target="_blank">
-                    <img
-                      src="assets/img/partners/manitoba.png"
-                      alt="manitoba"
-                      style="max-width: 200px"
                     />
                   </a>
                 </div>
@@ -1251,8 +1316,8 @@
                   <a href="https://aeronde.com/" target="_blank">
                     <img
                       style="max-width: 200px"
-                      src="assets/img/partners/laeronde.png"
-                      alt="aeronde"
+                      src="assets/img/partners/aeronde-logo.png"
+                      alt="l'aéronde"
                     />
                   </a>
                 </div>
@@ -1289,6 +1354,66 @@
                       style="max-width: 200px"
                       src="assets/img/partners/trellborg.png"
                       alt="stutgart"
+                    />
+                  </a>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <a href="https://espaceaero.com/" target="_blank">
+                    <img
+                      style="max-width: 200px; max-height: 100px; object-fit: contain"
+                      src="assets/img/partners/espace-aero.png"
+                      alt="E.space Aero"
+                    />
+                  </a>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <a href="https://www.458energy.com/" target="_blank">
+                    <img
+                      style="max-width: 200px; max-height: 100px; object-fit: contain"
+                      src="assets/img/partners/458-energy.png"
+                      alt="45-8 ENERGY"
+                    />
+                  </a>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <a href="https://thedaffodilscompany.com/" target="_blank">
+                    <img
+                      style="max-width: 200px; max-height: 100px; object-fit: contain"
+                      src="assets/img/partners/daffodils-company.png"
+                      alt="The Daffodils Company"
+                    />
+                  </a>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <a href="https://www.anumaaerospace.com/" target="_blank">
+                    <img
+                      style="max-width: 200px; max-height: 100px; object-fit: contain"
+                      src="assets/img/partners/anuma-aerospace.png"
+                      alt="Anumá Aerospace"
+                    />
+                  </a>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <a href="https://levitate.aero/" target="_blank">
+                    <img
+                      style="max-width: 200px; max-height: 100px; object-fit: contain"
+                      src="assets/img/partners/levitate-aerospace.png"
+                      alt="Levitate Aerospace"
                     />
                   </a>
                 </div>
