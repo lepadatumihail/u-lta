@@ -966,10 +966,11 @@ section {
 }
 
 .testimonials .testimonial-item a {
-  /* max-height: 120px; */
-  height: 100px;
+  min-height: 100px;
+  height: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .testimonials .testimonial-item h3 {
